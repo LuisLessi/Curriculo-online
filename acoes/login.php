@@ -22,6 +22,7 @@ if(isset($_POST['bt_entrar'])) {
         $_SESSION['status']    = "success";
         $_SESSION['idusuario'] = $dados['idusuario'];
         $_SESSION['email']     = $dados['email'];
+        $_SESSION['foto']      = $dados['foto']; // para mostrar no painel
         header('Location: ../painel.php'); // REDIRECIONAR PARA O PAINEL
     } else {
         // CRIAR VARIAVEIS DE SESSAO

@@ -8,7 +8,6 @@ body {
   color: #5a5a5a;
 }
 
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -25,8 +24,8 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
-  text-shadow: 0px 0px 2px #00000000;
 }
+
 .carousel-item > img {
   position: absolute;
   top: 0;
@@ -35,23 +34,8 @@ body {
   filter: brightness(30%);
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
-/* Title and Text*/
-h1 {
-  color: #F8F8F8;
-  text-shadow: -1px -1px 0 #00000069, 1px -1px 0 #00000069, -1px 1px 0 #00000069, 1px 1px 0 #00000069;
-
-}
-
-.text-carousel{
-  color: #F8F8F8;
-  text-shadow: -1px -1px 0 #00000069, 1px -1px 0 #00000069, -1px 1px 0 #00000069, 1px 1px 0 #00000069;
-}
-
-/*Arrows */
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {

@@ -65,6 +65,7 @@
           </li>
 
         </ul>
+        <img src="fotos/<?= $_SESSION['foto'] ?>" class="img-responsive img-redonda" style="display:inline" alt="Foto" width="25"> &nbsp; &nbsp;
         <div class="dados-usuarios"><?= $_SESSION['email']; ?></div>
         <a href="acoes/logout.php" class="btn btn-danger">Sair</a>
       </div>
@@ -102,7 +103,7 @@
           <div class="carousel-caption">
             <h1>Cadastre seus cursos</h1>
             <p class="text-carousel">Mantenha seu cadastro com seus cursos atualizados.</p>
-            <p><a class="btn btn-lg btn-primary" href="cadastrar-curso.php">Cadastrar Curso</a></p>
+            <p><a class="btn btn-lg btn-success" href="cadastrar-curso.php">Cadastrar Curso</a></p>
           </div>
         </div>
       </div>
@@ -113,7 +114,7 @@
           <div class="carousel-caption text-end">
             <h1>Atualize sempre seu perfil</h1>
             <p class="text-carousel">Deixe os seus dados pessoais e de contato sempre atualizados.</p>
-            <p><a class="btn btn-lg btn-primary" href="perfil.php">Atualizar perfil</a></p>
+            <p><a class="btn btn-lg btn-dark" href="perfil.php">Atualizar perfil</a></p>
           </div>
         </div>
       </div>
@@ -141,13 +142,13 @@
         
         <h2>Cadastro de Formações</h2>
         <p>Cadastre as suas formações.</p>
-        <p><a class="btn btn-secondary" href="cadastrar-formacao.php">Cadastrar Formações &raquo;</a></p>
+        <p><a class="btn btn-primary" href="cadastrar-formacao.php">Cadastrar Formações &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         
         <h2>Cadastro de Cursos</h2>
         <p>Cadastre seus cursos.</p>
-        <p><a class="btn btn-secondary" href="cadastrar-curso.php">Cadastrar Cursos &raquo;</a></p>
+        <p><a class="btn btn-success" href="cadastrar-curso.php">Cadastrar Cursos &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         

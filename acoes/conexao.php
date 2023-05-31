@@ -2,7 +2,7 @@
 
     $host     = "127.0.0.1";
     $user     = "root";
-    $password = "Assassin5@*";
+    $password = "Assassin5@";
     $dbname   = "curriculo";
 
     // CONEXAO

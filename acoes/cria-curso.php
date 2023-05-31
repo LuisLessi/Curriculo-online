@@ -2,7 +2,7 @@
 
     // iniciar uma nova sessão
     session_start();
-
+    require_once 'verifica-logado.php';
     // chamar nossa conexao
     require_once 'conexao.php';
 
@@ -14,18 +14,17 @@
         $idusuario   = mysqli_real_escape_string($con, $_SESSION['idusuario']);
 
         // INSTRUÇÃO SQL
-        $sql = "INSERT INTO cursos (nome_curso, instituicao, ano_curso, idusuario) VALUES
-         ('$nome_curso', '$instituicao', '$ano_curso', '$idusuario')";
+        $sql = "INSERT INTO cursos (nome_curso, instituicao, ano_curso, idusuario) VALUES ('$nome_curso', '$instituicao', '$ano_curso', '$idusuario')";
 
         // EXECUTAR INSTRUCAO SQL E VERIFICAR SUCESSO
         if(mysqli_query($con, $sql)) {
-            $_SESSION['mensagem'] = "Cadastro realizado com sucesso!";
+            $_SESSION['mensagem'] = "Curso cadastrado com sucesso!";
             $_SESSION['status']   = "success";
-            header('Location: ../painel.php');
+            header('Location: ../cursos.php');
         } else {
             $_SESSION['mensagem'] = "Não foi possível cadastrar curso";
             $_SESSION['status']   = "danger";
-            header('Location: ../painel.php');
+            header('Location: ../cursos.php');
         }
         // FECHAR CONEXAO
         mysqli_close($con);
