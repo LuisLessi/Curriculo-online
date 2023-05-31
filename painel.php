@@ -1,10 +1,16 @@
+<?php
+  session_start();
+  require_once 'acoes/verifica-logado.php';
+  
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Edson Maia">
+    <meta name="author" content="Luís Lessi">
 
     <title>Curri Web</title>
  
@@ -59,6 +65,7 @@
           </li>
 
         </ul>
+        <div class="dados-usuarios"><?= $_SESSION['email']; ?></div>
         <a href="acoes/logout.php" class="btn btn-danger">Sair</a>
       </div>
     </div>

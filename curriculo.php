@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once 'acoes/verifica-logado.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
  <head>

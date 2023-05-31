@@ -18,11 +18,11 @@
         if(mysqli_query($con, $sql)) {
          $_SESSION['mensagem'] = "Cadastro realizado com sucesso !";
          $_SESSION['status'] = "success";
-         header('Location: ../index.php?mensagem=Cadastro realizado com sucesso!');
+         header('Location: ../index.php');
         } else {
         $_SESSION['mensagem'] = "Erro ao realizar o cadastro !";
         $_SESSION['status'] = "danger";
-        header('Location: ../index.php?mensagem=Erro ao cadastrar!');
+        header('Location: ../index.php');
         }
         // FECHAR CONEXAO
         mysqli_close($con);

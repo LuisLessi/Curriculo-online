@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  require_once 'acoes/verifica-logado.php';
+  $id_logado  = $_SESSION['idusuario'];
+  $email_logado = $_SESSION['email'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
  <head>
@@ -71,7 +78,7 @@
           Digite o ano do curso
         </div>
       </div>
-      <input type="hidden" id="idusuario" name="idusuario" />
+      <input type="hidden" id="idusuario" name="idusuario" value="<?= $id_logado?>"/>
       </div>
       <br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
@@ -82,7 +89,7 @@
 </div>
 
 <!-- bootstrap.js -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
   <script src="assets/js/form-validation.js"></script>
 
 </body>
