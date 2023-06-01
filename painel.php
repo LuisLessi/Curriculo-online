@@ -168,7 +168,7 @@
   <!-- FOOTER -->
   <footer class="container d-flex align-items-center justify-content-center">
   <p class="float-end"><a href="#">Ir para o topo</a></p>
-  <p class="text-light">&nbsp;&middot; &copy; <?php echo date("Y"); ?> Luís Lessi &nbsp;&middot; <a href="#">Repositório</a> &nbsp;&middot; <a href="#">Portfólio</a></p>
+  <p class="text-light">&nbsp;&middot; &copy; <?php echo date("Y"); ?> Luís Lessi &nbsp;&middot; <a href="https://github.com/LuisLessi/Curriculo-online">Repositório</a> &nbsp;&middot; <a href="https://luislessi.github.io/My-portfolio/">Portfólio</a></p>
 </footer>
 </div>
 
